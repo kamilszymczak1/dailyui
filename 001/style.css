@@ -1,0 +1,187 @@
+:root {
+    --white: #f3eff5;
+    --black: #0d0a0b;
+    --gray: #454955;
+    --primary-green: #649d36;
+    --secondary-green: #3d6622;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+.main-background {
+    min-height: 100vh;
+    background-image: url("./img/veggies.jpeg");
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 10px;
+
+    background-color: var(--white);
+    color: var(--black);
+    
+
+    font-size: 3em;
+    font-family: 'Lobster Two', cursive;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1em;
+}
+
+.logo img {
+    margin-right: 0.2em;
+    height: 1.5em;
+    border-radius: 0.3em;
+}
+
+
+.sign-up-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-form-box {
+    max-width: min(400px, 80vw);
+    margin-top: 1em;
+    margin-bottom: 2em;
+    border-radius: 1em;
+    background-color: var(--white);
+}
+
+.sign-up-form-box-header-bar {
+    padding: 20px 50px;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to right, var(--primary-green), var(--secondary-green)) 1;
+}
+
+.sign-up-form-box-header-bar h2 {
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+.sign-up-form-box-header-bar p {
+    font-size: 0.9em;
+    color: var(--gray);
+}
+
+.sign-up-form {
+    padding: 30px 50px;
+    font-size: 1.5em;
+}
+
+.sign-up-input-container {
+    margin-bottom: 1em;
+}
+
+.sign-up-input {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    border-bottom: 1px solid var(--black);
+    outline: 0;
+    width: 100%;
+    padding: 2px 0;
+    margin: 0;
+}
+
+.sign-up-input:focus {
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to right, var(--primary-green), var(--secondary-green)) 1;
+}
+
+.newsletter-checkbox-label {
+    font-size: 0.5em;
+    color: var(--gray);
+}
+
+.newsletter-checkbox-label a {
+    color: var(--secondary-green);
+}
+
+.sign-up-submit-button-container {
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-submit-button {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    color: var(--white);
+    font-size: 1em;
+    padding: 10px;
+    cursor: pointer;
+    background-color: var(--primary-green);
+}
+
+.sign-up-submit-button:hover {
+    width: 100%;
+    background-color: var(--secondary-green);
+}
+
+.sign-in-question-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.sign-in-question {
+    border-radius: 10px;
+    padding: 20px 20px;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.sign-in-question-container h2 {
+    margin: 0;
+}
+
+.sign-in-question-container p {
+    margin-top: 0.5em;
+    color: var(--gray);
+}
+
+.sign-in-question-container a {
+    color: var(--secondary-green);
+}
+
+
+footer {
+
+    padding: 30px;
+
+    color: var(--white);
+    background-color: var(--black);
+    font-size: 0.75em;
+    text-align: center;
+}
+
+@media (max-width: 470px) {
+    
+    .sign-up-form-box {
+        min-width: 200px;
+    }
+}
