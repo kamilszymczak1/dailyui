@@ -101,6 +101,7 @@ p {
     margin: 0;
     font-size: 1.2rem;
     font-family: inherit;
+    border-radius: 0px;
 }
 
 .sign-up-input:focus {
