@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Credit Card Checkout</title>
+
+        <link rel="stylesheet" href="./style.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Work+Sans&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="main-content-container">
+            <div class="credit-card-checkout-container">
+                <div class="credit-card-checkout-left-panel">
+                    <div class="credit-card-checkout-header">
+                        <h2>Your Credit Card Details</h2>
+                        <p>Securely enter your credit card details to complete your purchase.</p>
+                    </div>
+                    <div class="credit-card-checkout-form">
+                        <div class="credit-card-checkout-form-input-container">
+                            <div class="card-details-input-box cardholder-name-box">
+                                <div class="card-details-input-box-header">
+                                    <img src="./svg/person_icon.svg" class="icon" />
+                                    <h2>Cardholder Name</h2>
+                                </div>
+
+                                <input type="text" placeholder="John Smith" />
+                            </div>
+                            <div class="card-details-input-box card-number-box">
+                                <div class="card-details-input-box-header">
+                                    <img src="./svg/credit_card_icon.svg" class="icon" />
+                                    <h2>Card Number</h2>
+                                </div>
+                                <input type="text" placeholder="1234 5678 1234 5678" />
+                            </div>
+                            <div class="card-details-input-box card-expiry-box">
+                                <div class="card-details-input-box-header">
+                                    <img src="./svg/calendar_icon.svg" class="icon" />
+                                    <h2>Exp. Date</h2>
+                                </div>
+                                <div class="card-expiry-container">
+                                    <input type="text" placeholder="01" /> / <input type="text" placeholder="23" />
+                                </div>
+                            </div>
+                            <div class="card-details-input-box card-cvc-box">
+                                <div class="card-details-input-box-header">
+                                    <img src="./svg/shield_icon.svg" class="icon" />
+                                    <h2>CVC</h2>
+                                </div>
+                                <input type="text" placeholder="123" />
+                            </div>
+                        </div>
+                        <div class="pay-button-box">
+                            <button>Pay Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="credit-card-checkout-right-panel">
+                    <h2>Total Order:</h2>
+                    <h3>$56.99</h3>
+                    <img src="./img/pineapple.png" />
+                </div>
+            </div>
+        </div>
+        <footer>Copyright Ⓒ 2023 | Kamil Szymczak</footer>
+    </body>
+</html>
