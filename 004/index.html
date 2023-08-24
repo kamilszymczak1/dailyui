@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, intial-scale=1" />
+
+        <title>Matrix Inverse Calculator</title>
+
+        <link rel="stylesheet" href="./style.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Roboto+Mono&family=Titillium+Web&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="main-container main-background">
+            <div class="top-bar">
+                <div class="logo-container">
+                    <div class="logo-img-container">
+                        <img class="logo-img" src="./img/logo.png" />
+                    </div>
+                    <div class="logo-text-container">
+                        <h1 class="logo-text">Matrix Inverse <br />Calculator</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content-container">
+                <div class="main-content">
+                    <div class="main-content-header">
+                        <h1 class="main-content-header-title">Matrix Inverse Calculator</h1>
+                        <p class="main-content-header-subtitle">
+                            Simplify your matrix inverse calculations with our user-friendly tool. It's quick, convenient, and free of charge!
+                        </p>
+                    </div>
+                    <div class="main-content-matrices-container">
+                        <div class="matrix-dimensions-settings-header-container">
+                            <h2>Specify the number of rows & columns</h2>
+                        </div>
+                        <div class="matrix-empty-div"></div>
+                        <div class="inverted-matrix-text-above-header">
+                            <h2>Inverted Matrix</h2>
+                        </div>
+                        <div class="matrix-dimensions-settings-input-container">
+                            <input class="matrix-dimensions-input row-input" type="text" value="3" placeholder="rows" />
+                            x
+                            <input class="matrix-dimensions-input column-input" type="text" value="3" placeholder="columns" />
+                        </div>
+                        <div class="matrix-empty-div"></div>
+                        <div class="inverted-matrix-text-above-subheader">
+                            <p>Once you enter all the coefficients of your matrix, you'll see the inverse of it below.</p>
+                        </div>
+                        <div class="matrix-container input-matrix-container">
+                            <div class="input-matrix matrix">
+                                <div class="matrix-bracket matrix-left-bracket">
+                                    <div class="matrix-bracket-background-bar"></div>
+                                </div>
+                                <div class="matrix-entries">
+                                    <input class="matrix-entry" type="text" value="1" />
+                                    <input class="matrix-entry" type="text" value="0" />
+                                    <input class="matrix-entry" type="text" value="0" />
+                                    <input class="matrix-entry" type="text" value="0" />
+                                    <input class="matrix-entry" type="text" value="1" />
+                                    <input class="matrix-entry" type="text" value="0" />
+                                    <input class="matrix-entry" type="text" value="0" />
+                                    <input class="matrix-entry" type="text" value="0" />
+                                    <input class="matrix-entry" type="text" value="1" />
+                                </div>
+                                <div class="matrix-bracket matrix-right-bracket">
+                                    <div class="matrix-bracket-background-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arrow-between-container"><img class="arrow-between" src="./img/arrow.png" /></div>
+                        <div class="matrix-container output-matrix-container">
+                            <div class="output-matrix matrix">
+                                <div class="matrix-bracket matrix-left-bracket">
+                                    <div class="matrix-bracket-background-bar"></div>
+                                </div>
+                                <div class="matrix-entries">
+                                    <input class="matrix-entry" type="text" value="1" disabled />
+                                    <input class="matrix-entry" type="text" value="0" disabled />
+                                    <input class="matrix-entry" type="text" value="0" disabled />
+                                    <input class="matrix-entry" type="text" value="0" disabled />
+                                    <input class="matrix-entry" type="text" value="1" disabled />
+                                    <input class="matrix-entry" type="text" value="0" disabled />
+                                    <input class="matrix-entry" type="text" value="0" disabled />
+                                    <input class="matrix-entry" type="text" value="0" disabled />
+                                    <input class="matrix-entry" type="text" value="1" disabled />
+                                </div>
+                                <div class="matrix-bracket matrix-right-bracket">
+                                    <div class="matrix-bracket-background-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="additional-content-container">
+                        <div class="wikipedia-link-container">
+                            <p>
+                                You can read more about matrices (and inverting them) on
+                                <a href="https://en.wikipedia.org/wiki/Matrix_(mathematics)">Wikipedia.</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>Copyright Ⓒ 2023 | Kamil Szymczak</footer>
+    </body>
+</html>

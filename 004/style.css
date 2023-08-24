@@ -1,0 +1,246 @@
+:root {
+
+}
+
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.main-background {
+    min-height: 100vh;
+    background: url("./img/matrix_background.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: none;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: start;
+    padding: 2rem;
+}
+
+.logo-container {
+    font-family: 'Archivo', sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.97);
+    border-radius: 1rem;
+}
+
+.logo-img {
+    height: 6rem;
+}
+
+.logo-text-container {
+    margin-left: 1rem;
+}
+
+.logo-text {
+    font-size: 2rem;
+    color: white;
+}
+
+.main-content-container {
+    display: flex;
+    justify-content: center;
+}
+
+.main-content {
+    background-color: rgba(0, 0, 0, 0.97);
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    max-width: 50vw;
+}
+
+.main-content-header {
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+.main-content-header-title {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    color: white;
+}
+
+.main-content-header-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: gray;
+}
+
+.main-content-matrices-container {
+    margin-top: 0.5rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    border-bottom: 2px solid white;
+}
+
+.matrix-dimensions-settings-header-container {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.inverted-matrix-text-above-header {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.matrix-dimensions-settings-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.matrix-dimensions-settings-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.matrix-dimensions-settings-input-container input {
+    border: 2px solid gray;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+    width: 4rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    margin: 0 0.4rem;
+    outline: none;
+}
+
+.matrix-dimensions-settings-input-container input:focus {
+    border: 2px solid white;
+}
+
+.inverted-matrix-text-above-subheader {
+    font-size: 1rem;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.arrow-between-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.matrix-container {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.matrix {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.matrix-bracket {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    width: 0.5rem;
+}
+
+.matrix-left-bracket {
+    flex-direction: row-reverse;
+}
+
+.matrix-bracket-background-bar {
+    width: 75%;
+    height: calc(100% - 0.25rem);
+    background-color: black;
+}
+
+.matrix-entries {
+    padding: 1rem 0;
+    margin: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.matrix-entry {
+    width: 4rem;
+    padding: 0.3rem;
+    background: transparent;
+    border: 1px solid gray;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 0.25rem;
+}
+
+.matrix-entry:focus {
+    border: 1px solid white;
+}
+
+.arrow-between {
+    height: 3rem;
+}
+
+.additional-content-container {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.wikipedia-link-container {
+    font-size: 1rem;
+    text-align: center;
+}
+
+footer {
+    padding: 30px;
+    color: white;
+    background-color: black;
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .main-content {
+        max-width: 70vw;
+    }
+}
