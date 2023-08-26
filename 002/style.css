@@ -37,7 +37,6 @@ body {
 
 .credit-card-checkout-left-panel {
     padding: 3rem;
-    border-right: 1px solid black;
 }
 
 .credit-card-checkout-header {
@@ -192,8 +191,59 @@ footer {
     .credit-card-checkout-container {
         flex-direction: column;
     }
-    .credit-card-checkout-left-panel {
-        border-right: none;
-        border-bottom: 1px solid black;
+
+    .credit-card-checkout-header h2 {
+        text-align: center;
+    }
+
+    .credit-card-checkout-header p {
+        text-align: center;
+    }
+
+    .credit-card-checkout-form-input-container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .cardholder-name-box {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .card-number-box {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+
+    .card-expiry-box {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .card-expiry-box input {
+        font-family: 'Roboto Mono', monospace;
+        width: 1.2rem;
+    }
+
+    .card-cvc-box {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+
+    .card-details-input-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardholder-name-box, .cardholder-name-box input, .card-number-box, .card-number-box input, .card-cvc-box, .card-cvc-box input, .card-expiry-box, .card-expiry-container {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        box-sizing: border-box;
+    }
+
+    .card-expiry-box input {
+        box-sizing: border-box;
+        width: calc(50% - .6rem);
+        text-align: center;
     }
 }
