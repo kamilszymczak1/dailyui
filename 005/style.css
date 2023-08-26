@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2rem;
     border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
     border-image-slice: 0 1 0 1;
-    border-image-width: 30px 20px;
+    border-image-width: 0px 20px;
 }
 
 .main-header {
@@ -36,6 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-header h1 {
+    text-align: center;
     color: white;
     padding: 2rem;
     font-size: 4rem;
@@ -57,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .icon {
     height: 10rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
     margin: 1rem 2rem;
 }
 
@@ -68,4 +69,20 @@ footer {
     background-color: black;
     font-size: 1rem;
     text-align: center;
+}
+
+@media(max-width: 800px) {
+
+    :root {
+        font-size: 0.7rem;
+    }
+
+    .main-content-container {
+        max-width: 80vw;
+        border-image-width: 0px 10px;
+    }
+
+    .icons-container {
+        flex-direction: column;
+    }
 }
