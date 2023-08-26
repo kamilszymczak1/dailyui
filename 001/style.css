@@ -180,6 +180,17 @@ footer {
     text-align: center;
 }
 
+@media (max-width: 600px) {
+    .navbar .logo {
+        font-size: 2rem;
+        padding: 1.5rem;
+    }
+
+    .logo img {
+        height: 4rem;
+    }
+}
+
 @media (max-width: 500px) {
 
     :root {
