@@ -359,6 +359,10 @@ footer {
         margin-top: 0;
     }
 
+    .profile-details-header h2 {
+        text-align: center;
+    }
+
     .third-bar {
         padding: 0 20px;
     }
