@@ -1,0 +1,205 @@
+:root {
+    --main-blue: #61b6ca;
+    --main-blue-light: #01bbbf;
+    --main-blue-dark: #016674;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+.icon {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(102deg) brightness(102%) contrast(101%);
+}
+
+.main-container {
+    color: white; /* temporary */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-background {
+    background: linear-gradient(45deg, var(--main-blue), var(--main-blue-dark)); /* temporary */
+}
+
+.settings-main-container {
+    border-radius: .3rem;
+    background-color: #222222;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    margin: 2rem 1rem;
+}
+
+.settings-main-padding {
+    padding: 1rem 2rem;
+}
+
+.settings-left-column {
+    padding-bottom: 2rem;
+}
+
+.settings-header-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    font-size: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 3px solid white;
+}
+
+.settings-header-left-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings-back-icon {
+    border: 3px solid rgba(0, 0, 0, 0);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.settings-back-icon:hover {
+    border: 3px solid black;
+}
+
+.settings-header-center-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings-header-icon {
+    height: 1.3em;
+    margin-right: 0.2em;
+}
+
+.settings-header-text {
+    font-weight: 600;
+}
+
+.settings-tile {
+    min-width: 700px;
+    background-color: black;
+    border-radius: .3rem;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    transition: .3s;
+}
+
+.settings-tile-icon {
+    height: 3em;
+}
+
+.settings-tile:hover {
+    background-color: #111111;
+}
+
+.settings-tile-text-container {
+    margin-left: .5em;
+    margin-right: 1em;
+    flex: 1;
+}
+
+.settings-tile-name {
+    font-weight: 500;
+    font-size: 1.5em;
+    margin-bottom: 0.2em;
+}
+
+.settings-tile-description {
+    font-size: 1em;
+    color: gray;
+}
+
+.settings-tile-go-icon {
+    border: 3px solid rgba(0, 0, 0, 0);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.settings-tile-go-icon:hover {
+    border: 3px solid black;
+}
+
+.setting-right-column {
+    background-color: white;
+}
+
+.robot-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.robot-image {
+    height: 500px;
+}
+
+footer {
+    padding: 30px;
+    color: white;
+    background-color: black;
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 1400px) {
+    :root {
+        font-size: 0.8rem;
+    }
+
+    .settings-tile {
+        min-width: 500px;
+    }
+
+    .robot-image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 930px) {
+    .settings-main-container {
+        flex-direction: column;
+    }
+
+    .robot-image {
+        margin-top: 2rem;
+        width: 70%;
+        height: auto;
+    }
+}
+
+@media (max-width: 620px) {
+    :root {
+        font-size: 0.7rem;
+    }
+    .settings-tile {
+        min-width: 100px;
+    }
+}
+
+@media (max-width: 400px) {
+    .settings-header-container {
+        font-size: 3rem;
+    }
+}
